@@ -1,0 +1,112 @@
+WebVTT subtitles for The Last Sohour, edited and saved from Websalacarte on Wednesday, 02-Mar-16 08:26:28 CET
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 23: Insertando en 2a lineay en 3a con BR 4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CR 6: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 16: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 17: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 18: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 19: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 20: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 21: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+<p>TEST BR-CRLF 22: Insertando en 2a lineay en 3a con BR 4a linea</p>
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 15: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:09.000
+TEST BR-CRLF 24: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:00.000 --> 00:00:10.000
+TEST BR-CRLF 25: 
+Insertando en 2a linea
+y en 3a con BR 
+
+4a linea
+
+00:00:00.240 --> 00:00:10.240
+TEST BR-CR: 
+Insertando en 2a linea
+y en 3a con BR 
+4a linea
+
+00:00:01.420 --> 00:00:11.420
+Insert, '1quote' & "2quotes"
+
+00:00:02.000 --> 00:00:12.000
+TEST BR-CRLF 24: 
+
+Insertando en 2a linea
+
+y en 3a con BR 
+
+
+4a linea
+
+00:00:02.720 --> 00:00:12.720
+test zoom
+
+00:00:03.980 --> 00:00:13.980
+test debug insert '1 comilla' y "2 comillas"
+
+00:00:03.980 --> 00:00:13.980
+test debug insert B, '1 comilla'  y "2 comillas"
+
+00:00:05.460 --> 00:00:15.460
+test con decodehtml '1 comilla' y "2 comillas"
+
+00:00:07.480 --> 00:00:17.480
+prueba con '1 quote' y con "2 quotes"
+
+00:00:07.680 --> 00:00:17.680
+It's not only my friendswho are coming to dinner.
+
+00:00:10.220 --> 00:00:20.220
+test7
+
+11:25:30.000 --> 11:27:10.000
+test6 (bis)
+
