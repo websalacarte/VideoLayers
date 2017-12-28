@@ -1,0 +1,1876 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+	min-height:600px;
+}
+
+body, html {
+	/*overflow:hidden;*/
+}
+
+* {
+	outline:none;	
+}
+
+::-moz-selection {
+    background: #34322d;
+    text-shadow: none;
+	color:#FFF;
+}
+
+::selection {
+    background: #34322d;
+    text-shadow: none;
+	color:#FFF;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+	font-family: 'BodoniMT';
+	src: url('../fonts/bod_r_1.eot');
+	src: url('../fonts/bod_r_1.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/bod_r_1.woff') format('woff'),
+			 url('../fonts/bod_r_1.ttf') format('truetype'),
+			 url('../fonts/bod_r_1.svg#bod_r_1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BodoniMT-Italic';
+	src: url('../fonts/bod_i_1.eot');
+	src: url('../fonts/bod_i_1.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/bod_i_1.woff') format('woff'),
+			 url('../fonts/bod_i_1.ttf') format('truetype'),
+			 url('../fonts/bod_i_1.svg#bod_i_1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1,h2,h3 {
+	font-weight:normal;	
+}
+body {
+	font-family: 'BodoniMT';
+	color:#2b2b2b;
+	background:url(../imatges/background1.jpg) repeat top center;
+}
+
+#mainContainer {
+	width:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+#mainContainer .wrapper {
+	width:980px;
+	margin:0 auto;;
+}
+
+#scrollContainer {
+	width:100%;
+
+}
+#scrollContainer.storyboard {
+}
+.centered { top:0; bottom:0; left:0; right:0; margin:auto; }
+
+.animPage {
+	position:fixed !important;
+	width:100%;
+	z-index:10;
+	overflow:hidden;
+}
+.both {
+	clear:both;	
+}
+
+#zoneHide {
+	display:none;	
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul.listInfos {
+	list-style:none;
+	margin:0;
+	padding:0;
+	font:12px Tahoma, Arial, sans-serif;
+}
+.listLegend {
+	font:11px Tahoma, Arial, sans-serif;
+	font-weight:bold;
+	display:block;
+	padding-bottom:16px;
+}
+
+ul.listInfos li {
+	background:url(../imatges/listinfo-bg.gif) no-repeat 0px 5px;
+	padding:0 0 10px 10px;
+	font-size:11px;
+	line-height:14px;
+}
+ul.listInfos.nopuce li {
+	background:none;	
+	padding-left:4px;
+}
+ul.listInfos li a {
+	text-decoration:none;	
+}
+
+.poincon {
+	background:transparent;	/*url(../imatges/poincongeneve.png) no-repeat top center;*/
+	text-align:center;
+	padding-top:62px;
+
+}
+.poinconInfos {
+	padding-top:6px;
+	font-size:16px;
+	line-height:18px;
+	text-transform:uppercase;
+	font-family: 'BodoniMT-Italic';
+	letter-spacing:-1px;
+	background:url(../imatges/sep3.png) repeat-x top center;
+	font-style:normal;
+}
+.poinconInfos i{
+	padding:0 15px 6px 15px;
+	background:url(../imatges/sep3.png) repeat-x bottom center;
+	display:inline-block;
+	font-style:normal;	
+}
+
+
+
+
+/**************************************************
+* -. SOMMAIRE
+***************************************************/
+
+#sommaire {
+	height:393px;
+	width:97px;
+	position:fixed;
+	left:40px;
+	top:200px;
+	z-index:500;
+	display:none;
+}
+.lt-ie7 #sommaire, .appleios  #sommaire {
+	display:none;	
+}
+#sommaire .fleche {
+	width:97px;
+	height:25px;
+	cursor:pointer;	
+}
+#sommaire #sommaireUp.fleche {
+	background:url(../imatges/sommaire-fleche-haut.png) no-repeat top center;
+	margin-bottom:20px;
+}
+#sommaire #sommaireDown.fleche {
+	background:url(../imatges/sommaire-fleche-bas.png) no-repeat bottom center;
+	margin-top:20px;
+}
+#sommaire .chapters {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family: 'BodoniMT-Italic';	
+	font-size:17px;
+	letter-spacing:-1px;
+	line-height:17px;
+	font-style:normal;
+}
+.en #sommaire .chapters {
+	font-size:16px;
+}
+.es #sommaire .chapters {
+	font-size:16px;
+}
+.kr #sommaire .chapters {
+	font-size:16px;
+}
+.de #sommaire .chapters {
+	font-size:14px;
+}
+#sommaire .chapters .chapter{
+	width:97px;
+	height:97px;	
+	background:url(../imatges/sommaire-cercle-background.png) no-repeat top left;
+	margin-bottom:6px;
+	text-align:center;
+	cursor:pointer;
+	position:relative;
+	overflow:visible;
+}
+#sommaire .chapters .chapter.selected, #sommaire .chapters .chapter.over{
+	background-position:top right;
+}
+#sommaire.white .chapters .chapter {
+	background-position:bottom left;
+}
+#sommaire.white .chapters .chapter.selected, #sommaire.white .chapters .chapter.over{
+	background-position:bottom right;
+}
+#sommaire .chapters .chapter .linkChapter{
+	text-decoration:none;
+	color:#242424;
+	display:block;
+	padding-top:7px;
+	outline: 0;
+}
+#sommaire .chapters .number {
+	display:block;
+	font-size:39px;
+	letter-spacing:-13px;
+	line-height:39px;
+	text-indent:-999px;
+	display:block;
+	height:39px;
+	margin-bottom:2px;
+}
+#sommaire .chapters .number1 {
+	background:url(../imatges/sommaire-number-1.png) no-repeat bottom center;	
+}
+#sommaire .chapters .number2 {
+	background:url(../imatges/sommaire-number-2.png) no-repeat bottom center;	
+}
+#sommaire .chapters .number3 {
+	background:url(../imatges/sommaire-number-3.png) no-repeat bottom center;	
+}
+#sommaire .submenu {
+	position:absolute;
+	top:0px;
+	left:80px;
+	height:97px;
+	display:none;
+	z-index:500;
+	background:url(../imatges/transparent.gif) repeat top left;	
+}
+#sommaire .montres {
+	margin:20px 0 0 0;
+	padding-left:30px;
+	width:200px;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:-1px;
+	line-height:17px;
+	text-transform:uppercase;
+}
+#sommaire .montres a{
+	text-decoration:none;
+	color:#242424;
+	outline: 0;
+}
+#sommaire.white .montres a {
+	color:#DEEDED;
+}
+#sommaire .montres a:hover, #sommaire .montres .selected a{
+	text-decoration:underline;	
+}
+/**************************************************
+* 0. INTRO
+***************************************************/
+
+#mainloader {
+	height:1200px;
+	z-index:1000;
+	width:100%;
+}
+#mainloader .cadre{
+	display:none;
+}
+
+#mainloader .wrapper {
+	height:100%;	
+	position:relative;
+	z-index:1001;
+}
+#mainloader .zoneBottom {
+	position:absolute;
+	bottom:65px;	
+	left:0px;
+	width:100%;
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	font-size:16px;
+	line-height:16px;
+	color:#777571;
+}
+#mainloader .zoneBottom #btnFullScreen {
+	width:200px;
+	text-align:center;
+	margin:0 auto;	
+	cursor:pointer;
+	display:none;
+}
+#mainloader .zoneBottom #btnFullScreen:hover {
+	color:#000;
+}
+#mainloader .zoneBottom #btnFullScreen span {
+	width:20px;	
+	background:url(../imatges/intro-btn-fullscreen.gif) no-repeat center left;
+	height:13px;
+	display:inline-block;
+	opacity:0.8;
+}
+#mainloader .zoneBottom #btnFullScreen:hover span {
+	opacity:1;	
+}
+#mainloader .mainContent {
+	position:absolute;
+	top:2200px;
+	width:100%;
+	height:460px;
+}
+#mainloader #loaderCache {
+	display:none;
+}
+#mainloader .introText {
+	text-transform:uppercase;
+	width:100%;
+	text-align:center;
+	font-style:italic;
+}
+#mainloader .btnNext {
+	margin-top:0px;
+	display:none;
+	width:105px;
+	height:105px;
+}
+#mainloader .btnNext .btnNextFond {
+	width:105px;
+	height:105px;
+	background-image:url(../imatges/chapitre-nextbtn.png);
+}
+
+#mainloader .btnNext .text {
+	position:absolute;
+	text-align:center;
+	top:40px;
+	font-family: 'BodoniMT-Italic';
+	font-size:15px;
+	line-height:15px;
+	width:100%;
+	left:0;
+}
+
+#mainloader .btnNext .btnNextFleche {
+	left:42px;
+	top:61px;
+}
+#mainloader .introText .mainText {
+	display:block;
+	font-size:22px;	
+	font-style:normal;
+	font-family: 'BodoniMT-Italic';
+}
+#mainloader .introText .subText {
+	display:block;	
+	font-size:15px;	
+	font-style:normal;
+	letter-spacing:3px;
+}
+#mainloader h1 {
+	margin:0;
+	background:none;
+	padding:0;
+	margin:0;
+	position:relative;
+	height:112px;
+	width:100%;
+	overflow:hidden;
+}
+#mainloader h1 img {
+	margin:0 auto;
+}
+
+#mainloader .containerH2 {
+	position:relative;
+	height:70px;
+	width:360px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#mainloader #introH2Cont {
+	text-transform:uppercase;
+	text-align:center;
+	width:360px;
+	background:url(../imatges/sep1.png) repeat-x top center;
+	position:absolute;
+	top:0px;
+	left:0;
+}
+#mainloader #introH2Cont h2 {
+	font-family: 'BodoniMT-Italic';
+	font-size:15px;
+	line-height:17px;
+	margin:0;
+	padding:0;
+	/* margin:7px 0; 
+	padding-bottom:7px;*/
+	background:url(../imatges/sep1.png) repeat-x bottom center;
+	overflow:hidden;
+	font-style:normal;
+}
+.ru #mainloader #introH2Cont h2 {
+	font-size:13px;	
+}
+#mainloader #introH2Cont h2 span{
+	margin:7px 0; 
+	display:inline-block;
+}
+#mainloader #introFleur {
+	width:458px;
+	height:90px;
+	margin:0 auto;
+	overflow:hidden;
+	background:url(../imatges/intro-fleur.png) no-repeat top center;
+}
+#mainloader #introLoader {
+	width:100px;
+	height:10px;
+	background:url(../imatges/intro-loader.gif) no-repeat top center;
+	margin:40px auto 0;
+}
+
+
+#sectionIntro {
+	background:url(../imatges/background1.jpg) repeat top center;
+	width:100%;
+	position:relative;
+	height:750px;
+}
+#sectionIntro .wrapper {
+	position:relative;
+}
+#sectionIntro .centerContainer {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+#sectionIntro #introWatches {
+	position:absolute;
+	width:980px;
+	top:134px;
+	left:0px;
+	margin:0;
+	padding:0;
+	z-index:0;
+}
+
+#sectionIntro #introWatches li {
+	list-style:none;
+	width:320px;
+	text-align:center;
+	position:absolute;
+	top:0px;
+}
+#sectionIntro #introWatches li#introMontre1{
+	left:35px;
+}
+#sectionIntro #introWatches li#introMontre2{
+	left:330px;
+}
+#sectionIntro #introWatches li#introMontre3{
+	left:625px;
+}
+#sectionIntro #introWatches .visu {
+	height:461px;
+	background:url(../imatges/intro-separator.png) no-repeat bottom center;
+	position:absolute;
+	left:35px;
+	top:0px;
+	z-index:2;
+	cursor:pointer;
+}
+
+#sectionIntro #introWatches .titre {
+	display:block;
+	text-align:center;
+	position:absolute;
+	left:0px;
+	top:467px;
+	z-index:2;
+	width:100%;
+}
+#sectionIntro #introWatches .rollover {
+	position:absolute;	
+	z-index:1;
+	display:none;
+}
+#sectionIntro #introWatches li#introMontre1 .rollover{
+	top:-69px;
+	left:10px;
+	width:284px;
+	height:485px;
+	background:url(../imatges/intro-montre1-rollover.png) no-repeat top center;
+}
+#sectionIntro #introWatches li#introMontre2 .rollover{
+	top:-20px;
+	left:19px;
+	width:285px;
+	height:453px;
+}
+#sectionIntro #introWatches li#introMontre2 .rollover1{
+	position:absolute;
+	top:-17px;
+	left:2px;
+	width:300px;
+	height:433px;
+	background:url(../imatges/intro-montre2-rollover1.png) no-repeat top left;	
+	z-index:1;
+	display:none;
+}
+#sectionIntro #introWatches li#introMontre2 .rollover2{
+	position:absolute;
+	top:73px;
+	left:40px;
+	width:70px;
+	height:250px;
+	background:url(../imatges/intro-montre2-rollover2.png) no-repeat top left;	
+	z-index:5;
+	display:none;
+}
+#sectionIntro #introWatches li#introMontre3 .rollover{
+	top:-69px;
+	left:23px;
+	width:285px;
+	height:351px;
+	background:url(../imatges/intro-montre3-rollover.png) no-repeat top center;
+}
+#sectionIntro .poincon {
+	position:absolute;
+	width:100%;
+	left:0px;
+	top:675px;	
+}
+
+
+/**************************************************
+* 1. THORTHON
+***************************************************/
+
+#sectionThorton {
+	background:url(../imatges/background1.jpg) repeat top center;
+	width:100%;
+	position:relative;
+	height:1800px;
+	color:#34322d;
+}
+#sectionThorton header {
+	padding-top:53px;
+	margin-bottom:17px;
+}
+
+#sectionThorton header h2 {
+	margin:0 auto;
+	text-align:center;
+	width:429px;
+	font-family: 'BodoniMT-Italic';
+	text-transform:uppercase;
+	font-size:26px;
+	line-height:26px;
+	letter-spacing:-1px;
+	font-style:normal;
+}
+#sectionThorton .ornement {
+	width:694px;
+	height:511px;
+	margin:0 auto;
+	background-image:url(../imatges/thorton-ornement_sprite.png);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+
+.lt-ie7 #sectionThorton .ornement, .appleios #sectionThorton .ornement{
+	background-image:url(../imatges/thorton-ornement.png);
+}
+
+#sectionThorton .tableaux {
+	margin-top:93px;
+	width:100%;
+}
+#sectionThorton .tableaux ul {
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	width:582px;
+	height:240px;
+	position:relative;
+	overflow:visible;
+}
+#sectionThorton .tableaux li {
+	position:absolute;
+	top:0px;
+	cursor:pointer;
+}
+#sectionThorton .tableaux li.tableau1 {
+	left:0px;	
+}
+#sectionThorton .tableaux li.tableau2 {
+	left:203px;	
+}
+#sectionThorton .tableaux li.tableau3 {
+	right:0px;	
+}
+#sectionThorton .accroche {
+	margin:33px auto 35px auto;
+	padding:0;
+	font-family: 'BodoniMT-Italic';
+	font-size:27px;
+	line-height:27px;
+	display:block;
+	width:800px;
+	text-align:center;
+	font-style:normal;
+	
+}
+#sectionThorton .lineSeparator {
+	width:63px;
+	height:6px;
+	background:url(../imatges/sep5.gif) repeat-x top center;
+	margin:0 auto;
+}
+#sectionThorton .mainText {
+	font-family: 'BodoniMT-Italic';
+	text-align:center;
+	width:550px;
+	margin:35px auto 0 auto;
+	font-family:16px;
+	line-height:20px;
+	font-style:normal;
+}
+#sectionThorton .mainText p {
+	margin-bottom:20px;	
+}
+.containerQuote {
+	background:url(../imatges/quote-top.png) no-repeat top center;
+	padding-top:63px;
+}
+.containerQuote .mainQuote{
+	background:url(../imatges/quote-bottom.png) no-repeat bottom center;
+	padding-bottom:63px;
+	display:block;
+}
+
+/**************************************************
+* 2. FLORILEGE 
+***************************************************/
+.tableau  {
+	background:url(../imatges/background1.jpg) repeat top center;
+	position:relative;
+	height:800px;
+	width:100%;
+	overflow:hidden;
+}
+#tableau2.tableau  {
+	background:url(../imatges/background2.jpg) repeat top center;
+}
+.tableau .animProfondeur {
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.tableau .animProfondeur .anim{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:3;
+}
+.tableau .animProfondeur .mask{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:4;
+}
+.tableau .animProfondeur .final{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:5;
+	display:none;
+}
+
+.tableau .animProfondeur .zoneTitle{
+	position:absolute;
+	top:200px;
+	left:0;
+	z-index:2;
+	width:100%;
+	text-align:center;
+	height:435px;
+}
+
+.tableau .animProfondeur .zoneBgLoad { 
+	position:absolute;
+	top:200px;
+	left:0;
+	z-index:2;
+	width:100%;
+	text-align:center;
+	height:600px;
+}
+#tableau1 .animProfondeur .zoneTitle .subTitle span{
+	border-color:#989772;
+	color:#989772;
+}
+#tableau2 .animProfondeur .zoneTitle .subTitle span{
+	border-color:#aa8e62;
+	color:#aa8e62;
+}
+#tableau3 .animProfondeur .zoneTitle .subTitle span{
+	border-color:#4c7376;
+	color:#4c7376;
+}
+
+.tableau .animProfondeur .zoneTitle .subTitle span{
+	border-top:solid 1px;
+	border-bottom:solid 1px;
+	display:inline-block;
+	margin-bottom: 5px;
+    margin-top: 0;
+}
+.tableau .animProfondeur .zoneTitle .subTitle span i{
+	font-family: 'BodoniMT-Italic';
+	text-transform:uppercase;
+	font-size:16px;
+	line-height:29x;
+	letter-spacing:-1px;
+	padding:2px 20px;
+	margin:0 auto;
+	display:block;
+	font-style:normal;
+	
+}
+.tableau .animProfondeur .zoneStart {
+	position:relative;
+	width:200px;
+	margin:5px auto 0;
+}
+.tableau .animProfondeur .zoneStart .loader{
+	width:100%;
+	height:7px;
+	margin:0 auto;
+	background-position:center center;
+	background-repeat:no-repeat;
+	position:absolute;
+	left:0;
+	top:0;
+}
+#tableau1 .animProfondeur .zoneStart .loader {
+	background-image:url(../imatges/tableaux-loader-whitelily.gif);
+	
+}
+#tableau2 .animProfondeur .zoneStart .loader {
+	background-image:url(../imatges/tableaux-loader-queen.gif);
+	
+}
+#tableau3 .animProfondeur .zoneStart .loader {
+	background-image:url(../imatges/tableaux-loader-limodoron.gif);
+	
+}
+.tableau .animProfondeur .zoneStart .btnStartAnim{
+	height:183px;
+	width:183px;
+	margin:0px auto;
+	background-repeat:no-repeat;
+	background-position:top center;
+	cursor:pointer;
+	text-align:center;
+	display:none;
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+.tableau .animProfondeur .zoneStart .btnStartAnim .text{
+	font-family: 'BodoniMT-Italic';
+	font-size:23px;
+	line-height:23px;
+	color:#F6F6F6;
+	display:block;
+	text-align:center;
+	padding-top:75px;
+	font-style:normal;
+	letter-spacing:-1px;
+}
+#tableau1 .btnStartAnim {
+	background-image:url(../imatges/tableaux-btn-whitelily.png);
+}
+#tableau2 .btnStartAnim {
+	background-image:url(../imatges/tableaux-btn-reine.png);
+}
+#tableau3 .btnStartAnim {
+	background-image:url(../imatges/tableaux-btn-limodoron.png);
+}
+.tableau .animProfondeur .blocimg{
+	width:100%;
+	left:0;
+	top:200px;
+	text-align:center;
+	position:absolute;
+}
+.containerProduct {
+	position:absolute;
+	left:2500px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:6;
+}
+.containerProduct .button {
+	width:75px;
+	height:75px;
+	position:absolute;
+	cursor:pointer;
+	z-index:100;
+	overflow:hidden;
+}
+.containerProduct .closeBtn {
+	top:20px;
+	left:20px;
+	background:url(../imatges/close_btn.png) no-repeat top left;
+}
+.containerProduct .closeBtn .text {
+	display:block;
+	font-family: 'BodoniMT-Italic';
+	font-size:17px;
+	line-height:17px;
+	margin-top:28px;
+	text-align:center;
+	color:#2f2f2f;
+	font-style:normal;
+}
+.kr .containerProduct .closeBtn .text {
+	font-size:12px;
+}
+.containerProduct .leftBtn {
+	top:20px;
+	left:100px;
+	background:url(../imatges/fleche_left.png) no-repeat top left;
+}
+.containerProduct .rightBtn {
+	top:20px;
+	right:20px;
+	background:url(../imatges/fleche_right.png) no-repeat top left;
+}
+.containerProduct .button.white {	
+	background-position:bottom left;
+}
+.containerProduct .btnOver, .containerProduct .btnModern{
+	background-position:top right;
+}
+.containerProduct .btnOver.white, .containerProduct .btnModern.white{
+	background-position:bottom right;
+}
+.containerProduct .btnModern {
+	opacity:0.6;	
+}
+.lt-ie7 .containerProduct .rightBtn {
+	left:180px;
+	right:auto;	
+	background-position:bottom left;
+}
+.lt-ie7 .containerProduct .leftBtn, .lt-ie7 .containerProduct .closeBtn {
+	background-position:bottom left;
+}
+.zoneMove {
+	position:relative;	
+	width:100%;
+	height:100%;
+	background:url(../imatges/background1.jpg) repeat top center;
+}
+.product {
+	width:5622px;
+	height:902px;
+	background:url(../imatges/background1.jpg) repeat top center;
+	position:relative;
+}
+.product .contenu {
+	float:left;
+	height:100%;
+	position:relative;
+	color:#34322d;
+}
+.product .slideshow {
+	background:#000;
+	position:relative;	
+}
+.product .slideshow ul {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	list-style:none;
+}
+.product .slideshow ul li{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+.product .slideshow .legend {
+	text-align:center;
+	position:absolute;
+	bottom:75px;
+	left:0px;
+	color:#f0f0f0;
+	width:100%;
+}
+.product .slideshow .legend span {
+	padding-top:12px;
+	font-size:32px;
+	line-height:32px;
+	font-family: 'BodoniMT-Italic';
+	letter-spacing:-1px;
+	background:url(../imatges/sep4.png) repeat-x top center;
+	display:block;
+	width:438px;
+	margin:0 auto;
+	font-style:normal;
+}
+.product .slideshow .legend .textItalic{
+	background:url(../imatges/sep4.png) repeat-x bottom center;
+	padding-bottom:15px;
+	display:block;
+	font-style:normal;
+}
+.product .slideshow .navSlideshow {
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	width:100%;
+	z-index:500;
+	text-align:center;
+}
+.product .slideshow .containerNav {
+	background:#000;
+	text-align:center;
+	padding:5px 15px;
+	display:inline-block;
+	
+}
+.product .slideshow .containerNav span {
+	width:7px;
+	height:8px;
+	margin-right:2px;
+	margin-left:2px;
+	display:inline-block;
+	cursor:pointer;
+	background:url(../imatges/product-slideshow-radio.png) no-repeat top left;
+}
+.product .slideshow .containerNav span.activeSlide {
+	background:url(../imatges/product-slideshow-radio_active.png) no-repeat top left;
+}
+.product h3 {
+	font-family: 'BodoniMT-Italic';
+	font-size:30px;
+	line-height:32px;
+	text-transform:uppercase;
+	margin:0;
+	letter-spacing:-1px;
+	font-style:normal;
+}
+.product h3 span{
+	font-size:17px;
+	line-height:17px;
+	display:block;
+	margin-top:-5px;
+	letter-spacing:0;
+}
+.product .languette{
+	position:absolute;
+	left:-48px;
+	width:48px;
+	height:100%;
+	cursor:pointer;
+	z-index:6;
+	display:none;
+	top:200px;
+	height:399px;
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+.product .languetteOver{
+	background-position:top right;	
+}
+.cn .product .languette {
+	background-image:url(../imatges/tableaux-languette_cn.png);
+}
+.de .product .languette {
+	background-image:url(../imatges/tableaux-languette_de.png);
+}
+.en .product .languette {
+	background-image:url(../imatges/tableaux-languette_en.png);
+}
+.es .product .languette {
+	background-image:url(../imatges/tableaux-languette_es.png);
+}
+.fr .product .languette {
+	background-image:url(../imatges/tableaux-languette_fr.png);
+}
+.it .product .languette {
+	background-image:url(../imatges/tableaux-languette_it.png);
+}
+.jp .product .languette {
+	background-image:url(../imatges/tableaux-languette_jp.png);
+}
+.kr .product .languette {
+	background-image:url(../imatges/tableaux-languette_kr.png);
+}
+.pt .product .languette {
+	background-image:url(../imatges/tableaux-languette_pt.png);
+}
+.ru .product .languette {
+	background-image:url(../imatges/tableaux-languette_ru.png);
+}
+#sectiontableau2 .product .languette, #sectiontableau1 .product .languette {
+	background:url(../imatges/tableaux-temp-languette.png) no-repeat center right;	
+}
+.product .languette2 {
+	background:url(../imatges/tableaux-temp-languette.png) no-repeat center right;	
+}
+.product .blockSlideShow {
+	width:1010px;
+}
+.product .blockCitation {
+	width:650px;
+	height:100%;
+	font-size:26px;
+	line-height:26px;
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+}
+.product .verticalCenter {
+	margin-top:237px;	
+	height:600px;
+	position:relative;
+}
+.product .blockCitation .blockQuote {
+	position:absolute;
+	top:86px;
+	left:178px;
+	width:360px;	
+	text-align:center;
+	margin:0 auto;
+	background:url(../imatges/product-blockquote_top.png) no-repeat top center;
+	padding-top:92px;
+}
+.product .blockCitation .blockQuote span{
+	width:100%;
+	display:block;
+	background:url(../imatges/product-blockquote_bottom.png) no-repeat bottom center;
+	padding-bottom:100px;
+	
+}
+.product .blockWatches {
+	width:430px;
+}
+.product .blockWatches .watchBig {
+	width:500px;
+	position:relative;
+}
+.product .blockWatches .watchBig .visu {
+	position:absolute;
+	top:9px;
+	left:120px;
+}
+.product .blockWatches .watchBig .poincon {
+	position:absolute;
+	width:484px;
+	left:16px;
+	top:508px;
+}
+.product .blockWatches .watchSmall {
+	position:absolute;
+	height:500px;
+	width:232px;
+	left:380px;
+	top:114px;
+	text-align:center;
+	display:none;
+}
+.product .blockWatches .watchSmall .visu {
+	position:absolute;
+	top:0px;
+	left:42px;
+}
+.product .blockWatches .watchSmall .exclusivite {
+	position:absolute;
+	width:205px;
+	left:10px;
+	top:265px;
+	background:url(../imatges/product-exclusivite.png) no-repeat bottom center;	/* ********************************* */
+	text-align:center;
+	padding-bottom:60px;
+	font-size:15px;
+	line-height:15px;
+	text-transform:uppercase;
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	letter-spacing:-1px;
+}
+.product .blockSpecifications {
+	width:725px;
+}
+.product .blockSpecifications .verticalCenter {
+	margin-left:70px;
+}
+
+.product .blockSpecifications h2 {
+	margin:0;
+}
+.product .blockSpecifications .limite {
+	display:block; 
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	font-size:21px;
+	letter-spacing:-1px;
+}
+
+.product .blockSpecifications .illustrations {
+	list-style:none;
+	margin:21px 0 0;
+	padding:0;
+	height:223px;
+}
+.product .blockSpecifications .illustrations li {
+	float:left;	
+}
+.product .blockSpecifications .illustrations .legend {
+	display:block;
+	text-align:center;	
+	font-family: 'BodoniMT-Italic';
+	font-size:15px;
+	line-height:15px;
+	letter-spacing:-1px;
+	text-transform:uppercase;
+	padding-top:5px;
+	margin-left:-15px;
+	font-style:normal;
+}
+
+.product .blockCalibre {
+	width:895px;
+}
+.product .blockCalibre .visu {
+	position:absolute;
+	top:40px;
+	left:69px;	
+}
+.product .blockCalibre .infos {
+	position:absolute;
+	top:86px;
+	left:486px;
+	width:350px;
+	
+}
+.product .blockCalibre ul.listInfos {
+	margin-top:17px;	
+}
+.product ul.listInfos li {
+	padding-bottom:12px;
+}
+.product .blockMakingOf {
+	width:1010px;
+}
+
+.product .blockMetier {
+	width:853px;
+}
+.product .blockMetier .cercle {
+	width:362px;
+	height:362px;
+	background:url(../imatges/product-cercle.png) no-repeat top center;
+	position:absolute;
+	left:257px;
+	top:108px;
+	cursor:pointer;
+}
+.product .blockMetier .cercle span {
+	display:block;
+	width:95%;
+	margin:0 auto;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'BodoniMT-Italic';
+	font-size:22px;
+	line-height:22px;
+	letter-spacing:-1px;
+	padding-top:107px;
+	padding-bottom:60px;
+	background:url(../imatges/product-fleches.png) no-repeat bottom center;
+	font-style:normal;
+}
+.en product .blockMetier .cercle span {
+	padding-top:143px;
+	font-size:18px;
+}
+.it product .blockMetier .cercle span {
+	padding-top:132px;
+	font-size:19px;
+}
+.de product .blockMetier .cercle span {
+	font-size:19px;
+}
+/**************************************************
+* 3. METIERS
+***************************************************/
+
+#sectionMetiers {
+	background:url(../imatges/background1.jpg) repeat top center;
+	width:100%;
+	position:relative;
+	min-height:2817px;
+	color:#34322d;
+}
+#sectionMetiers header {
+	padding-top:53px;
+	margin-bottom:12px;
+}
+
+#sectionMetiers header h2 {
+	margin:0 auto;
+	text-align:center;
+	width:429px;
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	text-transform:uppercase;
+	font-size:26px;
+	line-height:26px;
+	letter-spacing:-1px;
+}
+#sectionMetiers .ornement {
+	width:268px;
+	height:115px;
+	margin:0 auto;
+	background:url(../imatges/metiers-ornement.png) no-repeat top left;
+}
+#sectionMetiers .accroche {
+	margin:56px auto 25px auto;
+	padding:0;
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	font-size:27px;
+	line-height:27px;
+	display:block;
+	width:805px;
+	text-align:center;
+}
+#sectionMetiers .containerMainBtnVideo {
+	text-align:center;
+}
+#sectionMetiers #mainBtnVideo {
+	margin:0 auto;
+}
+#sectionMetiers #mainBtnVideo{
+	background:url(../imatges/sep1.png) repeat-x top center;
+	text-align:center;
+	display:inline-block;
+	font-family: 'BodoniMT-Italic';
+	font-size:15px;
+	line-height:17px;
+	cursor:pointer;
+}
+#sectionMetiers #mainBtnVideo:hover{
+	color:#000;	
+}
+#sectionMetiers #mainBtnVideo i {
+	background:url(../imatges/sep1.png) repeat-x bottom center;
+	font-weight:normal;
+	display:inline-block;
+	padding:8px 25px;
+	font-style:normal;
+}
+#sectionMetiers .listMetiers {
+	width:100%;
+	margin-top:79px;
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+}
+#sectionMetiers .listMetiers ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#sectionMetiers .listMetiers ul li{
+	float:left;
+	width:326px;
+}
+
+#sectionMetiers .btnVideo {
+	width:298px;
+	height:295px;
+	margin:0 auto;
+	position:relative;
+	/* cursor:pointer; */
+}
+#sectionMetiers .btnVideo .cercle {
+	width:298px;
+	height:295px;
+	background:url(../imatges/metiers-cercle.png) no-repeat top left;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:50;
+}
+
+#sectionMetiers .btnVideo .trait {
+	width:228px;
+	height:32px;	
+	background:url(../imatges/metiers-cercle-trait.png) no-repeat top center;
+	position:absolute;
+	top:222px;
+	left:37px;
+	z-index:30;
+	font-size:17px;
+	line-height:32px;
+	text-align:center;
+	overflow:hidden;
+	text-transform:uppercase;
+	display:none;
+}
+#sectionMetiers .btnVideo .bg {
+	width:271px;
+	height:271px;
+	position:absolute;
+	top:13px;
+	left:15px;
+	z-index:10;
+	overflow:hidden;
+}
+#sectionMetiers .btnVideo .bg img{
+	-moz-border-radius: 139px; /* FF1+ */
+	-webkit-border-radius: 139px; /* Saf3-4 */
+	border-radius: 139px; /* Opera 10.5, IE 9, Saf5, Chrome */
+	
+}
+#sectionMetiers .mainText {
+	width:285px;
+	margin-left:14px;
+	margin-top:45px;
+	font-size:16px;
+	line-height:20px;
+}
+#sectionMetiers .mainText h3 {
+	margin:0 0 27px 0;
+	padding:0 0 25px 0;
+	font-size:24px;
+	line-height:24px;
+	background:url(../imatges/sep5.gif) no-repeat bottom left;
+	width:275px;
+	word-wrap:normal;
+}
+#sectionMetiers .mainText p {
+	padding-bottom:5px;
+}
+
+#sectionMetiers  #ornementFin {
+	width:146px;
+	height:1085px;
+	margin:131px auto 20px;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(../imatges/metiers-fin_sprite.png);
+	position:relative;
+	overflow:hidden;
+}
+.lt-ie7 #sectionMetiers  #ornementFin, .appleios #sectionMetiers  #ornementFin{
+	background-image:url(../imatges/metiers-fin.png);
+}
+#sectionMetiers  #ornementFin span {
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	font-size:22px;
+	line-height:22px;
+	text-transform:uppercase;
+	position:absolute;
+	width:100%;
+	text-align:center;
+	top:631px;
+	left:0;
+}
+
+/**************************************************
+* ALL CHAPTER
+***************************************************/
+#pageThorton {
+	position:relative;
+	z-index:12;
+}
+#pageFlorilege {
+	position:relative;
+	z-index:11;
+}
+.sectionChapter {
+	background:url(../imatges/background2.jpg) repeat top center #ece5df;
+	position:relative;
+	height:783px;
+}
+.sectionChapter .wrapper {
+	position:relative;
+}
+.sectionChapter .mainContent {
+	position:absolute;
+	width:100%;
+	text-align:center;
+}
+.sectionChapter .btnNext {
+	width:87px;
+	height:87px;
+	overflow:hidden;
+	margin:0 auto;
+	/* cursor:pointer; */
+	position:relative;
+	margin-top:20px;
+}
+.sectionChapter .btnNext .btnNextFond {
+	width:87px;
+	height:87px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	/* background-image:url(../imatges/chapitre-nextbtn.png); */
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+.sectionChapter .btnNextOver .btnNextFond {
+	background-position:right top;
+}
+.sectionChapter .btnNext .btnNextFleche {
+	width:23px;
+	height:17px;
+	background:url(../imatges/chapitre-nextbtn-fleche.png) no-repeat top left;
+	position:absolute;
+	top:34px;
+	left:32px;
+	z-index:2;
+}
+.sectionChapter#sectionChapterI .mainContent {
+	top:191px;
+}
+.sectionChapter#sectionChapterII .mainContent {
+	top:161px;
+}
+.sectionChapter#sectionChapterIII .mainContent {
+	top:161px;
+}
+.sectionChapter .mainContent .number {
+	margin-bottom:6px;	
+}
+.sectionChapter .mainContent h1 {
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-size:23px;
+	line-height:23px;
+	letter-spacing:-1px;
+	padding-bottom:25px;
+	margin-bottom:10px;
+	background:url(../imatges/sep2.png) no-repeat bottom center;
+}
+.sectionChapter#sectionChapterI .mainContent .ornement {
+	margin-top:-31px;
+	background:url(../imatges/chapitre1-ornement.png) no-repeat top center;
+	height:153px;
+}
+.sectionChapter#sectionChapterII .mainContent .ornement {
+	margin-top:25px;
+	width:420px;
+	margin:0 auto;
+	background:url(../imatges/chapitre2-ornement_sprite.png) no-repeat;
+	height:180px;
+	overflow:hidden;
+}
+.lt-ie7 .sectionChapter#sectionChapterII .mainContent .ornement, .appleios .sectionChapter#sectionChapterII .mainContent .ornement{
+	background:url(../imatges/chapitre2-ornement.png) no-repeat;
+}
+.sectionChapter#sectionChapterIII .mainContent .ornement {
+	margin-top:12px;
+	background:url(../imatges/chapitre3-ornement_sprite.png) no-repeat top center;
+	height:200px;
+	width:420px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.lt-ie7 .sectionChapter#sectionChapterIII .mainContent .ornement, .appleios .sectionChapter#sectionChapterIII .mainContent .ornement{
+	background:url(../imatges/chapitre3-ornement.png) no-repeat;
+}
+
+.sectionChapter .cadre {
+	margin:38px;
+	min-width:904px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.lt-ie7 .sectionChapter .cadre {
+	display:none;
+}
+.lt-ie7 .sectionChapter .cadre div {
+	display:none;
+}
+.sectionChapter .cadre img {
+	padding:0;
+	margin:0;	
+	position:absolute;
+}
+.sectionChapter .cadre .cdrTop,
+.sectionChapter .cadre .cdrBottom {
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 10px;
+}
+.sectionChapter .cadre .cdrTop {
+	top:0;
+	height:5px;
+}
+.sectionChapter .cadre .cdrBottom {
+	bottom:0;	
+	height:3px;
+}
+.sectionChapter .cadre .cdrLeft,
+.sectionChapter .cadre .cdrRight {
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:2px;
+	margin:10px 0;
+
+}
+.sectionChapter .cadre .cdrLeft img,
+.sectionChapter .cadre .cdrRight img {
+	right:0;
+	left:0;	
+}
+.sectionChapter .cadre .cdrLeft {
+	left:0px;
+}
+.sectionChapter .cadre .cdrRight {
+	right:3px;
+}
+.sectionChapter .cadre .cdrTL,
+.sectionChapter .cadre .cdrBL,
+.sectionChapter .cadre .cdrBR ,
+.sectionChapter .cadre .cdrTR {
+	position:absolute;
+	width:17px;
+	height:17px;
+}
+.sectionChapter .cadre .cdrTL {
+	top:0;
+	left:0;
+	background:url(../imatges/cadre-cornerTL.png) no-repeat top left;
+}
+.sectionChapter .cadre .cdrBL {
+	bottom:0;
+	left:0;
+	background:url(../imatges/cadre-cornerBL.png) no-repeat bottom left;
+}
+.sectionChapter .cadre .cdrBR {
+	bottom:0;
+	right:0;
+	background:url(../imatges/cadre-cornerBR.png) no-repeat bottom right;
+}
+.sectionChapter .cadre .cdrTR {
+	top:0;
+	right:0;
+	background:url(../imatges/cadre-cornerTR.png) no-repeat top right;
+}
+.sectionChapter .cadre .cdrOrnementT,
+.sectionChapter .cadre .cdrOrnementB
+{
+	position:absolute;
+	left:0;
+	right:0;
+	height:24px;
+	background:url(../imatges/cadre-ornement.png) no-repeat top center;
+}
+.sectionChapter .cadre .cdrOrnementT {
+	top:-7px;	
+}
+.sectionChapter .cadre .cdrOrnementB {
+	bottom:-10px;	
+}
+
+/**************************************************
+* LIGHTBOX
+***************************************************/
+#lightbox {
+	position:fixed;
+	left:0px;
+	top:0px;
+	background:url(../imatges/background2.jpg) repeat top center;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	display:none;
+	min-width:980px;
+	
+}
+
+#lightbox .zoneVideo {
+	text-align:center;
+	margin-bottom:15px;
+}
+#lightbox .zoneVideo iframe {
+	background-color:#000;	
+}
+#lightbox .zoneImage {
+	margin:101px auto 28px;
+	text-align:center;
+}
+#lightbox .zoneTitle {
+	width:500px;
+	margin:0 auto;
+	text-align:center;	
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	font-size:28px;
+	letter-spacing:-1px;
+	line-height:28px;
+}
+#lightbox .zoneTitle .subTitle {
+	display:block;	
+	font-size:17px;
+	line-height:17px;
+}
+#lightbox #lightBoxBtnRetour {
+	width:75px;
+	height:75px;
+	background:url(../imatges/close_btn.png) no-repeat top left;
+	position:absolute;
+	left:18px;
+	top:18px;
+	z-index:1020;
+	cursor:pointer;
+}
+#lightbox #lightBoxBtnRetour.btnOver, #lightbox #lightBoxBtnRetour.btnModern{
+	background-position:top right;
+}
+#lightbox #lightBoxBtnRetour.btnModern {
+	opacity:0.6;	
+}
+#lightbox #lightBoxBtnRetour .text {
+	display:block;
+	font-family: 'BodoniMT-Italic';
+	font-style:normal;
+	font-size:17px;
+	line-height:17px;
+	margin-top:28px;
+	text-align:center;
+	color:#2f2f2f ;
+}
+.kr #lightbox #lightBoxBtnRetour .text {
+	font-size:12px;	
+}
+
+#rotateOverlay {
+	z-index: 10000;position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+}
+#rotateOverlay .bg{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color:#000; opacity:0.8; }
+#rotateOverlay .container{  width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1501; }
+#rotateOverlay .container .rotate-content{ width: 500px; height: 20px; position: absolute; top: 50%; left: 50%; margin-top: -10px; margin-left: -250px; color: #fff; text-align: center; font-size: 20px; }
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,381 @@
+*{ outline: none; }
+
+/*html,body{
+overflow: auto;
+}*/
+
+/* Style for windows XP */
+#main.xp.univers .details-description, #main.xp.malte .desc ul, #main.xp .details ul, #main.xp .videoCont .desc, #main.xp .mk .desc, #main.xp .sep ul{ font-family : Tahoma, Arial, sans-serif; letter-spacing : 0px; font-style : normal; font-size : 12px }
+
+body{
+	background: url(../img/body/bg-body.jpg) left top repeat;
+	font-family: Georgia, Times, sans-serif;
+	letter-spacing: -1px;
+	font-style: italic;
+	color: #4b4642;
+}
+
+h1, h2{
+	margin-top: 40px;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3);
+	line-height: 27px;
+	font-weight: normal;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.ru h1, .ru h2{
+	font-size: 21px;
+	line-height: 22px;
+}
+.cn h1, .ru h2{
+	font-size: 27px;
+}
+
+h1, h2.title{
+	background: url(../img/body/sep.jpg) left center no-repeat;
+	width: 455px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 0 225px;
+}
+
+h1 span, h2.title span{
+	width: 222px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 50%;
+	margin-bottom: -9px;
+	background: url(../img/body/sep-right.jpg) left top no-repeat;
+}
+
+.clear{
+	clear: both;	
+}
+
+#main{
+	position: relative;
+	overflow: hidden;	
+}
+
+#topBar{ z-index: 500; background-color: #000000; text-align: center; width: 100%; height: 80px; border-top: 2px solid #b39b64; position: fixed; -position: absolute; top:0; let:0; }
+
+.part { z-index: 100; height: 849px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto;  overflow: hidden; }
+.part#part0 { height: 645px; z-index: 3; }
+.part .part-title{ position: absolute; top: 0; left: 50%; width: 920px; margin-left:-460px; text-align: center;  }
+.part .part-title .subtitle{ font-size: 18px; line-height: 18px; margin-top: 5px; color: #fff; text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3); }
+.part .bgContent{ position: absolute; top: 20px; left: 50%; width: 1300px; height: 700px; margin-left: -650px; }
+.part .poincon{ text-align: center; font-style: normal; text-transform: uppercase; font-size: 14px; line-height: 14px; color: #fff; position: absolute; bottom: 40px; left: 50%; width: 600px; margin-left: -300px; padding-top: 54px; background: url(../img/body/poincon-white.png) center top no-repeat; text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3); }
+.part#part1 .btDiscover, .part#part2 .btDiscover{ position: absolute; bottom: 22px; left: 50%; margin-left: -87px; }
+
+.bulle{ position: absolute; display: none; top: 90px; left: 50%; text-align: left; height: 660px; }
+.bulle .content-bloc{ width: 395px; position: absolute; top: 50%; margin-top: 0px; }
+.bulle .closeDetails{ display: block; width:62px; height: 62px; position: absolute; top:0; left: 396px; background: url(../img/body/bt/bt-close.png) center center no-repeat; }
+/*.bulle .closeDetails:hover{ background-image: url(../img/body/bt/close_hover.png); }*/
+.bulle .content-bloc .legend{ font-size: 24px; line-height: 25px; text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3); color: #4a3d38; }
+.bulle .content-bloc .content{ margin-top: 30px; }
+.bulle .content-bloc .content .item-list{ margin-bottom: 10px; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0; color: #747474; font-style: normal; font-size: 12px; line-height: 12px; }
+.bulle .content-bloc .zoom-thumbs{ margin-top: 33px; }
+.bulle .content-bloc .content .item-list .label{ font-weight: bold; }
+.bulle .content-bloc .content .item-list .desc{  }
+
+.bulle .content-bloc.video-content{ width: 415px; top: 220px; left: 225px; }
+.bulle .content-bloc.video-content .title{ text-align: center; font-size: 28px; line-height: 25px; }
+.bulle.metier .content-bloc.video-content .title{ text-align: center; font-size: 40px; line-height: 38px; }
+.bulle .content-bloc.video-content .subtitle{ color: #cfb978; text-align: center; font-size: 20px; line-height: 18px; }
+.bulle .content-bloc.video-content .desc{ line-height: 17px; color: #b6b1a8; font-size: 15px; padding-top: 10px; margin-top: 10px; background: url(../img/body/trait.png) left top repeat-x; }
+div.guillemets .top-guillemet{ margin-top: -5px; display: inline-block; width: 24px; height: 20px; background: url(../img/body/guillemet-h.png) left top no-repeat; vertical-align: top;  }
+div.guillemets .bot-guillemet{ margin-bottom: -5px; display: inline-block; width: 24px; height: 20px; background: url(../img/body/guillemet-b.png) left top no-repeat; vertical-align: bottom;  }
+.bulle .content-bloc.video-content .play{ display: block; cursor: pointer; width: 117px; height: 93px; background: url(../img/body/bt/lecture.png) left top no-repeat; margin-left: auto; margin-right: auto; }
+.bulle .content-bloc.video-content .play:hover{ background-position: left bottom; }
+
+/*#part0 { background: url(../img/body/fond-first-malte.jpg) left bottom repeat-x; }
+#part1 { background: url(../img/body/fond-second.jpg) 50% 0 no-repeat; }
+#part1 { background: url(../img/body/fond-third.jpg) 50% 0 no-repeat; }*/
+#theend { background: url(../img/body/puckered.png) 50% bottom no-repeat fixed; }	/* 404 */
+
+/* Controls */
+#btzoom{ position: absolute; top: 0; left: 0; z-index: 500; }
+/*.controls{ z-index: 300; display: none; overflow: hidden; cursor:pointer; position: fixed; left: 50%; width: 174px; height: 82px; margin-left: -87px;  background: url(../img/body/bt/bt_video.png) no-repeat; }
+.controls .cont{ display: block; width: 174px; height: 82px; position: absolute; left: 0; z-index: 0; }
+.controls .zoneclick{ display: block; width: 174px; height: 82px; position: absolute; top: 0; left: 0; z-index: 10; }
+.controls .bt{ display: block; position: absolute; width: 41px; height: 21px; left: 50%; margin-left: -20px; }
+#control-top .bt{ top: 15px; background: url(../img/body/bt/fleche_nav_haut.jpg) left top no-repeat; }
+#control-bottom .bt{ bottom: 15px; background: url(../img/body/bt/fleche_nav_bas.jpg) left top no-repeat; }
+#control-top{ top: 80px; background-position: left bottom; }
+#control-top .cont, #control-top .zoneclick{ top: 0; }
+#control-bottom{ bottom: 0; background-position: left top; }
+#control-bottom .cont, #control-bottom .zoneclick{ bottom: 0; }*/
+
+/* Discover more */
+.btDiscover{ text-align: center; text-decoration:none; display: block; cursor:pointer; position: relative; width: 174px; height: 168px;  background: url(../img/body/bt/bt-discover.png) left top no-repeat; margin: 0 auto;	 }
+.btDiscover .vidTop{ width:120px; margin-left: auto; margin-right: auto; padding-top: 56px; display: block; font-size: 14px; color: #7e7e7e; text-transform: uppercase; line-height: 13px; }
+.btDiscover .bt{ display: block; position: absolute; width: 51px; height: 26px; left: 50%; margin-left: -25px; bottom: 46px; background: url(../img/body/bt/arrow-bt.jpg) left top no-repeat; }
+.btDiscover .cont{ display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0; }
+.btDiscover .zoneclick{ display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 10; }
+
+/* Menu */
+/*#part0{ margin-top: 50px; -margin-top: 0; }*/
+#part0 #bg-video-top{ position: absolute; top: 87px; left: 50%; width: 1400px; height: 600px; margin-left: -700px; z-index: 1; }
+#part0 div.content-bloc { width: 100%; top: 0; position: absolute; text-align: center; z-index: 2; left: 0; }
+#part0 div.content-bloc .pres{ color: #fff; font-size: 20px; line-height: 19px; margin-top: 34px; text-transform: uppercase; text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3); }
+#part0 div.content-bloc .pres span{ font-size: 14px; }
+#part0 div.content-bloc .subpres { font-size: 18px; line-height: 18px; color: #fff; margin-top: 10px; text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3); padding-bottom: 60px; background: url(../img/body/poincon-white.png) center bottom no-repeat; }
+#part0 div.content-bloc h1{ margin-top: 24px; background-position: left bottom; }
+#part0 div.content-bloc h1 span{ bottom: 0; margin-bottom: 0; }
+#part0 #montres-menu{ width: 840px; margin: -48px auto 0 auto; position: relative; z-index: 2; }
+#part0 #montres-menu .modeles{ height: 400px; }
+#part0 #montres-menu .modeles a.montre-menu{ display: inline-block; vertical-align: top; text-align: center; width: 337px; height: 430px; position: relative; }
+#part0 #montres-menu .modeles a.montre-menu img{ width: 32px; height: 32px; position: absolute; top: 50%; left: 50%; margin-top: -12px; margin-left: -12px; }
+#part0 #montres-menu .modeles a#montre-menu1{ background: none; }
+#part0 #montres-menu .modeles a#montre-menu2{ background: none; margin-right: 0;  }
+#part0 #montres-titres{ z-index: 0; position: relative; text-align: center; margin: 0 auto; width: 840px; margin-top: -35px; height: 90px; }
+#part0 #montres-titres .fonds{ position: absolute;z-index: 0; bottom:0; left:0; }
+#part0 #montres-titres .montre-titre{ width: 337px; z-index: 1; background-color: transparent; text-align: center; cursor: pointer; text-transform: uppercase; display: inline-block; margin: 0; vertical-align: top; }
+#part0 #montres-titres .montre-titre h2{ margin: 0; font-size: 18px; color: #4b4642; font-weight: normal; padding: 0 0 0 0; text-transform: uppercase; font-size: 18px; line-height: 18px; text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3); }
+#part0 #montres-titres .montre-titre .subtitle{ text-transform: none; color: #4b4642; margin-top: 8px; font-size: 16px; text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3); }
+#main.ru #part0 #montres-titres .montre-titre .montre-titre-details{ font-size: 18px;  }
+#main.cn #part0 #montres-titres .montre-titre .montre-titre-details{ font-size: 18px;  }
+#part0 #montres-titres .montre-titre.last{ margin-right: 0px; }
+
+#part1{  z-index: 4; }
+#part2{  z-index: 5; }
+
+/* Big Watch */
+.montreBig{ background-position: left top; background-repeat: no-repeat; }
+.montreBig .loader { display: block; position: absolute; width: 24px; height: 24px; margin-left: -12px; left: 50%; top: 315px; }
+.montreBig img { display: none; }
+/*.part div.bulle { top: 50%; left: 420px; margin-top: -425px; text-align: left; }
+.part .montreBig { background-position: right top; height: 1200px; padding: 0; margin: 0; width: 750px; position: absolute; top:0; left: -60px; text-align: center; }*/
+.part .montreBig { background-position: center top; height: 808px; padding: 0; margin: 0; width: 808px; position: absolute; top: 62px; left: 50%; text-align: center; margin-left: -404px;  }
+/*.part .montreBig .img1{ margin-top: 135px; }
+.part .montreBig .img2{ margin-top: 62px; }*/
+
+/* Zoom */
+.part .zoomipad{ position: absolute; left: 20px; bottom: 250px; z-index: 50; }
+.zoom-action{ cursor: pointer; }
+a.zoom-thumb{ display: inline-block; margin-left: 2px; width: 96px; height: 94px; background-position: left bottom; background-repeat: no-repeat; }
+a.zoom-thumb-first{ margin-left: -1px; }
+a.zoom-thumb:hover{ background-position: left bottom; background-position: left top; }
+#part1 a.zoom-thumb0, #zoom1 .thumbs a.thumb0{ background-image: url(../img/body/zoom/zoom-watch1-2.png); }
+#part1 a.zoom-thumb1, #zoom1 .thumbs a.thumb1{ background-image: url(../img/body/zoom/zoom-watch1-1.png); }
+#part1 a.zoom-thumb2, #zoom1 .thumbs a.thumb2{ background-image: url(../img/body/zoom/zoom-watch1-3.png); }
+
+#part2 a.zoom-thumb0, #zoom2 .thumbs a.thumb0{ background-image: url(../img/body/zoom/zoom-watch2-2.png); }
+#part2 a.zoom-thumb1, #zoom2 .thumbs a.thumb1{ background-image: url(../img/body/zoom/zoom-watch2-1.png); }
+#part2 a.zoom-thumb2, #zoom2 .thumbs a.thumb2{ background-image: url(../img/body/zoom/zoom-watch1-3.png); }
+
+.zoom{ position: absolute; top:0; left:0; background-color: #000; z-index: 400; overflow: hidden; }
+.zoom .backBt{ cursor: pointer; text-transform: uppercase; color: #cfb978; font-family: Georgia, Times; font-size: 18px; font-style: italic; position: absolute; top: 0; left: 0; z-index: 450; width: 199px; height: 129px; background: url(../img/body/fd-back.png) left top no-repeat;  }
+.zoom .backBt:hover{ background-position: left bottom; }
+#main.it .zoom .backBt, #main.pt .zoom .backBt, #main.kr .zoom .backBt{ font-size: 16px; }
+.zoom .backBt .content-bt{ padding-top: 25px; padding-left: 42px; z-index: 10; position: absolute; width: 100%; height: 100%; }
+.zoom .backBt .flecheLeft{ z-index: 0; background: url(../img/body/bt/fleche_nav_left.png) left top no-repeat; width: 42px; height: 71px; position: absolute; top: 0; left: 0; }
+.zoom .bulle .play{ margin-top: 5px; }
+.zoom .fonds .fond{ position: absolute; top: 0; left: 0; }
+.zoom .fonds .img{ display: inline-block; }
+.zoom .loader { display: block; position: absolute; width: 24px; height: 24px; margin-top: -12px; margin-left: -12px; left: 50%; top: 50%; }
+.zoom .thumbs{ position: absolute; left: 0; bottom: 0; width: 100%; height: 110px; background: url(../img/body/opac90.png) left top repeat; text-align: center;  }
+.zoom .thumbs a.thumb{ display: inline-block; margin-left: 2px; border: 1px solid #282624; width: 96px; height: 94px; margin-top: 5px; background-position: left bottom; background-repeat: no-repeat; }
+.zoom .thumbs a.thumb:hover{ border-color: #cfb978; background-position: left top; }
+
+/* Map area and watch bg*/
+.maparea, .bgWatch{
+	width: 834px;
+	height: 834px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -417px;
+}
+
+.maparea .area-0{
+	background-color: #fff;
+}
+
+.bgWatch .bizot{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bgWatch .bizot-roll{
+	width: 515px;
+	height: 515px;
+	overflow: hidden;
+	position: absolute;
+	top: 147px;
+	left: 168px;
+	display: none;
+}
+.bgWatch .bizot-roll img{
+	margin-top: -515px;
+	display: block;
+}
+
+.bulle .content-bloc .watch,
+.bulle .content-bloc .details{
+	display: none;
+}
+
+/* Labels big watch */
+
+.labels .label{
+	width: 375px;
+	position: absolute;
+	background:transparent url(../img/body/bt/bt-moreinfos-labels.png) no-repeat left center;
+	text-shadow: 1px 1px 3px rgba(1, 2, 1, 0.3);
+	color: #4a3d38;
+}
+
+.labels .label .title{
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.labels .label .desc{
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 2px;
+}
+
+.labels .label-left{
+	top: 195px;
+	right: 50%;
+	margin-right: 95px;
+	text-align: right;
+	background-position: right center;
+}
+.labels .label-left .container{
+	padding-right: 65px;	
+}
+
+.labels .label-right{
+	top: 480px;
+	left: 50%;
+	margin-left: 105px;
+}
+.labels .label-right .container{
+	padding-left: 65px;	
+}
+
+/* Scroll list */
+
+#part3 {
+	position:relative;
+	width:960px;
+	margin: 0 auto;
+	height: 500px;
+}
+
+#part3 h2{ font-size: 20px; text-transform: none; line-height: 22px; margin-bottom: 10px; }
+
+#part3 .arrow {
+	width:49px;
+	height:49px;
+	position:absolute;
+	top:200px;
+	background:transparent url(../img/body/productlist-arrows.png) no-repeat;
+	cursor:pointer;
+}
+#part3 #productArrowLeft {
+	background-position:left top;
+	left:0;
+}
+#part3 #productArrowRight {
+	background-position:left bottom;
+	right:0;
+}
+#listWatches {
+	width:788px;
+	height:328px;
+	overflow:hidden;
+	margin:0 auto;
+	position:relative;
+}
+#listWatches ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#listWatches li {
+	float:left;
+	width:380px;	/*197px;*/
+	height:328px;
+}
+
+/* Scroll navigation */
+#scrollnavigation{
+	-webkit-transition: right 300ms, opacity 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-moz-transition: right 300ms, opacity 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-o-transition: right 300ms, opacity 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-ms-transition: right 300ms, opacity 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition: right 300ms, opacity 750ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+
+#scrollnavigation .center{
+	font-family: 'Tahoma', 'Geneva', 'Arial', sans-serif;
+	font-size: 11px;
+	color:#bca56b;
+	font-style: normal;
+	letter-spacing: normal;
+}
+
+#scrollnavigation a.active:hover{
+	background-image:none;background-color:#cfb978;
+}
+
+#scrollnavigation a{
+	-webkit-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-moz-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-o-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-ms-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+
+#scrollnavigation {position:absolute;width:82px;height:113px;z-index:200;bottom:88px;background-color:#4a3d38;display: none;right: 0;}
+  #home #scrollnavigation {display:block;}
+    .slider-slider-ok #scrollnavigation {right:0;opacity:1;}
+#scrollnavigation .top, #scrollnavigation .bottom {  position:relative;overflow:hidden;display:block;width:100%;height:43px;}
+#scrollnavigation .active {cursor:pointer;}
+#scrollnavigation .arrow {position:absolute; overflow: hidden; z-index:90001;left:36px;top:16px; width:13px;height:10px;background:url(../img/body/bt/scroller-sprite.png) no-repeat -26px 0;}
+  #scrollnavigation .bottom .arrow {background-position:-26px -10px;}
+    #scrollnavigation .top .active {background-position:0 0;}
+      #scrollnavigation .bottom .active {background-position:0 -10px;}
+        #scrollnavigation .top .hover {background-position:-13px 0;}
+        #scrollnavigation .bottom .hover {background-position:-13px -10px;}
+#scrollnavigation .center {width:100%;height:27px;line-height:11px;text-transform:uppercase;text-align:center;}
+#scrollnavigation .center span {padding:8px 4px;display:block;}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+	font-family: 'BodoniMT';
+	src: url('../fonts/bod_r_1.eot');
+	src: url('../fonts/bod_r_1.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/bod_r_1.woff') format('woff'),
+			 url('../fonts/bod_r_1.ttf') format('truetype'),
+			 url('../fonts/bod_r_1.svg#bod_r_1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BodoniMT-Italic';
+	src: url('../fonts/bod_i_1.eot');
+	src: url('../fonts/bod_i_1.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/bod_i_1.woff') format('woff'),
+			 url('../fonts/bod_i_1.ttf') format('truetype'),
+			 url('../fonts/bod_i_1.svg#bod_i_1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.ingredients {list-style: none; font-family: 'BodoniMT-Italic'; font-size: 1em; font-style: normal; line-height: 20px; line-height: 18px;line-height: 16px;line-height: 14px;line-height: 12px;}

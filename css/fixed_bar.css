@@ -1,0 +1,281 @@
+/* 
+    Document   : fixed_bar
+    Created on : 7 janv. 2013, 10:29:30
+    Author     : qduborper
+    Description:
+        Fixed barre used for sihh2013 initially.
+*/
+
+#infrabarre{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 64px;
+	z-index: 1000;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+}
+
+/* For non fixed positionning support */
+.infrabarre-absolute{
+	position: absolute !important;
+	bottom: auto !important;
+}
+
+#infrabarre .infrabarre-button{
+	width: 48px;
+	height: 21px;
+	position: absolute;
+	left: 50%;
+	margin-left: -24px;
+	top: 0;
+	z-index: 1;
+}
+
+#infrabarre .infrabarre-content{
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+#infrabarre .clear{
+	clear: both;
+}
+
+#infrabarre .logo{
+	width: 189px;
+	height: 64px;
+	float: left;
+	display: block;
+}
+
+#infrabarre .logo span{
+	display: none;
+}
+
+#infrabarre .links{
+	float: left;
+	width: 680px;
+	padding-left: 1px;
+}
+
+#infrabarre .link{
+	display: inline-block;
+	height: 64px;
+	
+	-webkit-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-moz-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-o-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-ms-transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition: background-color 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+
+#infrabarre .link a{
+	text-decoration: none;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 10px;
+	display: inline-block;
+	height: 64px;
+	padding: 0 15px 0 54px;
+	vertical-align: top;
+}
+
+#infrabarre .link a:hover{
+	background-position: left bottom;
+}
+
+#infrabarre .link a span{
+	display: block;
+	padding-top: 25px;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+}
+
+#infrabarre .link a span:hover{
+	opacity: 0.9;
+	filter: alpha(opacity = 90);
+}
+	
+#infrabarre .share{
+	float: right;
+	width: 82px;
+}
+
+#infrabarre .share a{
+	display: inline-block;
+	width: 41px;
+	height: 38px;
+	margin-top: 12px;
+}	
+#infrabarre .share a:hover{
+	background-position: left bottom;
+	
+	-webkit-transition: background-position 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-moz-transition: background-position 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-o-transition: background-position 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-ms-transition: background-position 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition: background-position 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+
+#infrabarre .share a span{
+	display: none;
+}	
+	
+/* Light grey theme */
+.infrabarre-light-grey, .infrabarre-light-grey .infrabarre-content {
+	background-color: #fdfdfc;
+}
+
+.infrabarre-light-grey2, .infrabarre-light-grey2 .infrabarre-content {
+	background-color: #f4f4f4;
+}
+
+.infrabarre-light-grey .infrabarre-button{
+	background: url(../img/light-grey/bt.png) left top repeat-y;
+}
+
+.infrabarre-light-grey2 .infrabarre-button{
+	background: url(../img/light-grey/bt.png) left top repeat-y;
+}
+
+.infrabarre-light-grey2 .links,
+.infrabarre-light-grey .links{
+	background: url(../img/light-grey/sep.jpg) left top repeat-y;
+}
+
+.infrabarre-light-grey2 .link,
+.infrabarre-light-grey .link{
+	background: url(../img/light-grey/sep.jpg) right top repeat-y;
+}
+
+.infrabarre-light-grey2 .link a,
+.infrabarre-light-grey .link a{
+	color: #554728;
+}
+
+.infrabarre-light-grey2 .link:hover,
+.infrabarre-light-grey .link:hover{
+	background-color: #f6f6f4;
+}
+
+.infrabarre-light-grey2 .link-collections a,
+.infrabarre-light-grey .link-collections a{
+	background: url(../img/light-grey/link-collections.png) left top no-repeat;
+}
+
+.infrabarre-light-grey2 .link-forum a,
+.infrabarre-light-grey .link-forum a {
+	max-width: 200px;
+	background: url(../img/light-grey/link-forum.png) left top no-repeat;
+}
+
+.infrabarre-light-grey2 .link-news a,
+.infrabarre-light-grey .link-news a{
+	background: url(../img/light-grey/link-news.png) left top no-repeat;
+	padding-left: 65px !important;
+}
+
+.infrabarre-light-grey2 .link-contact a,
+.infrabarre-light-grey .link-contact a{
+	background: url(../img/light-grey/link-contact.png) left top no-repeat;
+}
+
+.infrabarre-light-grey .logo{
+	/*background: url(../img/light-grey/logo.jpg) left top no-repeat;*/
+	background: url(../img/light-grey/logo-alqvimia.png) left top no-repeat;
+}
+
+.infrabarre-light-grey .share .fb{
+	background: url(../img/light-grey/share_fb.jpg) left top no-repeat;
+}
+
+.infrabarre-light-grey .share .tw{
+	background: url(../img/light-grey/share_twitter.jpg) left top no-repeat;
+}
+
+.infrabarre-light-grey2 .logo{
+	/*background: url(../img/light-grey/logo2.jpg) left top no-repeat;*/
+	background: url(../img/light-grey/logo-alqvimia.png) left top no-repeat;
+}
+
+.infrabarre-light-grey2 .share .fb{
+	background: url(../img/light-grey/share_fb2.jpg) left top no-repeat;
+}
+
+.infrabarre-light-grey2 .share .tw{
+	background: url(../img/light-grey/share_twitter2.jpg) left top no-repeat;
+}
+
+
+
+	
+/* Black theme */
+.infrabarre-black, .infrabarre-black .infrabarre-content {
+	background-color: #000;
+}
+
+.infrabarre-black .infrabarre-button{
+	background: url(../img/dark/bt.png) left top repeat-y;
+}
+
+.infrabarre-black .links{
+	background: url(../img/dark/sep.jpg) left top repeat-y;
+}
+
+.infrabarre-black .link{
+	background: url(../img/dark/sep.jpg) right top repeat-y;
+}
+
+.infrabarre-black .link a{
+	color: #eeb590;
+}
+
+.infrabarre-black .link:hover{
+	background-color: #0b0b0b;
+}
+
+.infrabarre-black .link-collections a{
+	background: url(../img/dark/link-collections.png) left top no-repeat;
+}
+
+.infrabarre-black .link-forum a {
+	max-width: 200px;
+	background: url(../img/dark/link-forum.png) left top no-repeat;
+}
+
+.infrabarre-black .link-news a{
+	background: url(../img/dark/link-news.png) left top no-repeat;
+	padding-left: 65px !important;
+}
+
+.infrabarre-black .link-pos a{
+	background: url(../img/dark/link-pos.png) left top no-repeat;
+	padding-left: 55px !important;
+}
+
+.infrabarre-black .link-contact a{
+	background: url(../img/dark/link-contact.png) left top no-repeat;
+}
+
+.infrabarre-black .logo{
+	background: url(../img/dark/logo.jpg) left top no-repeat;
+}
+
+.infrabarre-black .share .fb{
+	background: url(../img/dark/share_fb.jpg) left top no-repeat;
+}
+
+.infrabarre-black .share .tw{
+	background: url(../img/dark/share_twitter.jpg) left top no-repeat;
+}
+
+
+/* IE6 png */
+.png {.behavior: url(iepngfix.htc); }
+

@@ -1,0 +1,275 @@
+
+.banner{
+	margin: 0px auto;
+	width:78%;
+	color:#333;
+	text-shadow: 0px -1px #000000;
+}
+.topHeaderimg1{
+	background:url(images/code.png) no-repeat;
+	background-size:100%;
+	width:28%;
+	height:200px;
+	min-height:480px;
+	float: left;
+	text-align:center;
+	margin-left:24px;
+}
+.topHeaderimg2{
+	clear:right;
+	background:url(images/video.png) no-repeat;
+	background-size:100%;
+	width:28%;
+	height:200px;
+	min-height:480px;
+	float: left;
+	text-align:center;
+	margin-left:24px;
+}
+.topHeaderText{
+	width:58%;
+	float:left;
+}
+.topContent{
+	width:44%;
+	min-height:480px;
+	float: left;
+	text-align:center;
+	margin-left:24px;
+	box-shadow: 1px 1px 6px #333;
+	color:333;
+	word-break:break-strict;
+	background-color:#F8F8F8;
+}
+.contentTop p a:link{
+	color: #287315;
+	text-decoration: none;
+}
+.contentTop p a:hover, a:active, a:focus{
+	color: #287315;
+	text-decoration: underline;
+}
+.topContent p{
+	color:333;
+	text-align:left;
+}
+.topContent li{
+	text-align:left;
+	color:333;
+}
+.topContent img{
+	max-width:80%;
+}
+.content-bottom{
+	width:90%;
+	margin:24px auto;
+}
+.topsection{
+	float:left;
+	width:58%; 
+	box-shadow: 1px 1px 6px #333 inset;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	padding-top:12px;
+	background:#F8F8F8;
+}
+
+.contentBottom{
+	width:68%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.styled-select select {
+    padding:6px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	width:72px;
+	height: 27px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:6px}
+}
+
+.styled-select label {position:relative}
+.styled-select label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:1 1 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.styled-select label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+.user-details{
+	padding-top:16px;
+	width:100%;
+	height:62px;
+	/*background:url(images/textureblock.png) repeat;*/
+	/*box-shadow: 3px 3px 5px #333 inset;*/
+	/*border-bottom:#333 2px thin solid;*/
+	color:#CCC;
+}
+.user-details h2{
+	/*text-shadow: -1px -1px #000000;*/
+	display:inline;
+}
+/* .styled-select select {
+   background: transparent;
+   width: 68px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: none;
+   outline:none;
+   border-radius: 0;
+   height: 27px;
+   -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+   box-shadow: 3px 3px 5px #CCC inset;
+   -moz-box-shadow:3px 3px 5px #CCC inset;
+   -webkit-box-shadow:3px 3px 5px #CCC inset;
+} */
+
+.styled-select select {
+    padding:6px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	width:72px;
+	height: 27px;
+}
+
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+.styled-select label {position:relative}
+.styled-select label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:1 1 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.styled-select label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+.banner-upload{
+	float:left;
+	position:absolute;
+	top:18%;
+	left:80%;
+}
+
+.page-uploads{
+	text-align:left;
+	margin-left:8px;
+	margin-top:68px;
+	width: 89.8%;
+	max-width: 100%;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	padding:6px;
+	padding-left:10px;
+	padding-bottom:26px;
+	color:#FFF;
+	background-color:#333;
+}
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 16px solid #A7A7A7;
+	border-radius:12px;
+	-moz-border-radius:12px;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+/* .styled-select {
+   width: 74px;
+   height: 27px;
+   overflow: hidden;
+   background: url(images/selectTick.png) no-repeat right #F8F8F8;
+   border: 1px solid #ccc;
+   border-radius:3px;
+	-moz-border-radius:3px;
+} */

@@ -1,0 +1,367 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: 'helveticaneue_condensedbold';
+    src: url('../fonts/helveticaneue-boldcond_0-webfont.eot');
+    src: url('../fonts/helveticaneue-boldcond_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-boldcond_0-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-boldcond_0-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-boldcond_0-webfont.svg#helveticaneue_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body { height: 100%; }
+body, #supersized { min-width: 978px; }
+
+body {
+	background: #fff url("../img/body-bg.jpg") center top no-repeat;
+	font-family: Georgia, Times, sans-serif;
+}
+
+body, body a { color: #262626; }
+
+#main {
+	width: 978px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	height: 100%;
+}
+
+.lt-ie7 #header .hr, .lt-ie7 #watches article .img-wrapper img {
+	behavior: url("iepngfix.htc");
+}
+
+/**
+ * Header
+ */
+#header {
+	padding: 40px 0 30px;
+	font-style: italic;
+	text-shadow: 0px 1px 2px #333333;
+	color: #fff;
+}
+#header p, #header h1 { margin: 0; }
+#header .hr {
+	display: block;
+	width: 350px;
+	height: 7px;
+	border: none;
+	margin: 1em auto 2em;
+	background: url(../img/hr.png) center no-repeat;
+}
+#header .brand, #header h1 { text-transform: uppercase; line-height: 1em; }
+#header .intro { font-size: 17px; }
+#header .brand { font-size: 16px; }
+#header .brand span { display: block; font-size: 20px; }
+#header h1 {
+	width: 580px;
+	margin: 20px auto 0;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+/**
+ * Watches
+ */
+
+ #watches{
+	 height: 467px;
+	 position: relative;
+ }
+ 
+.watches-centerHeight{
+	position: absolute !important;
+	top: 55%;
+	left: 0;
+	margin-top: -234px;
+	width: 978px;
+}
+
+#watches article {
+	display: block;
+	float: left;
+	width: 326px;
+}
+#watches article .img-wrapper {
+	position: relative;
+	height: 343px;
+}
+#watches article .img-wrapper img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 201;
+	cursor: pointer;
+}
+#watches article .img-wrapper img.glow { z-index: 200; }
+.lt-ie9 #watches article.hover .img-wrapper img.glow {
+	visibility: visible;
+}
+#watches article .info {
+	width: 230px;
+	padding: 2px 10px 0;
+	margin: 0 auto 25px;
+	background: url(../img/dash-pattern.png) right top repeat-x;
+}
+#watches article .info h3 {
+	min-height: 2em;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 10px 0 20px;
+}
+.lt-ie7 #watches article .info h3 { height: 2em; }
+
+/* language specific stuff */
+.es #watches article .info h3,
+.it #watches article .info h3,
+.ru #watches article .info h3 { min-height: 3em; }
+.cn #watches article .info h3 { min-height: 4em; }
+
+/**
+ * Button style
+ */
+a.btn {
+	width: 129px;
+	display: inline-block;
+	zoom: 1;
+	border: dotted 1px #262626;
+	padding: 6px 25px;
+	line-height: 17px;
+	
+	font-family: 'helveticaneue_condensedbold', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+	font-weight: normal;
+	font-size:12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0;
+	
+	-webkit-transition: background-color 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-moz-transition: background-color 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-o-transition: background-color 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	-ms-transition: background-color 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition: background-color 350ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+a.btn:hover {
+	background-color: #a4938c;
+	color: #fff;
+}
+
+/**
+ * Supersized jquery plugin.
+ */
+#supersized { display: none; position: absolute; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; min-height: 920px; }
+.positionfixed #supersized { display: block; }
+#supersized img { width:auto; height:auto; position:relative; outline:none; border:none; }
+#supersized a { z-index:-30; position: absolute; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111; display:block; }
+#supersized a.image-loading { width:100%; height:100%; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

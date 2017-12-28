@@ -1,0 +1,8 @@
+a img {border: none;}
+.wrapper {
+	background: #fff;
+	width: 750px;
+	border: 1px solid #a1a1a1;
+	margin: 10px auto 10px auto;
+	height: auto;
+}
