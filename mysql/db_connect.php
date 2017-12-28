@@ -1,16 +1,6 @@
 <?php 
 
-	//$connect = mysql_connect('server', 'user', 'password');
-	//$connect = mysql_connect('websalac_videolayers', 'vladmin', '8464vdEmm') or die("Problems!");
-
-
-
-//$connect = mysql_connect('localhost', 'websalac_vladmin', '8464vdEmm') or die("Problems!" . mysql_error());
-$connect = mysql_connect('localhost', 'websalac_vladmin', '8464vdEmm') or die("Problems!" . mysql_error());
-
-	//$connect = mysql_connect('localhost', 'root', '') or die("Problems!" . mysql_error());
-
-//$db = mysql_select_db('websalac_videolayers');
+$connect = mysql_connect('{yourDBservername}', '{yourDBusername}', '{yourDBpassword}') or die("Problems!" . mysql_error());
 
 //if (!isset ($db)) {
 	$db = mysql_select_db('websalac_videolayers_v09');
