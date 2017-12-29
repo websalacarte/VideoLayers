@@ -14,6 +14,32 @@
 		// desde función "on_btn_edit_ok_click( video_id, caja_id, post_id )"
 		var _comm_id = _post_id.split("_");	// _post_id = '_88'; comm_id = '88'
 		var comm_id = _comm_id[1];
+
+		var is_overlaid = $('body').hasClass('is_overlaid');
+		var is_xy = $('body').hasClass('is_commsallover');
+		if (is_overlaid && is_xy) {
+			var _posx = $('#comment-post-text_'+_vid+'_'+_box).parents('.comment-insert').find('.new_comm_buttons_wrapper #pos_comm .posx').val();
+			var _posy = $('#comment-post-text_'+_vid+'_'+_box).parents('.comment-insert').find('.new_comm_buttons_wrapper #pos_comm .posy').val();
+			var _width = $('#comment-post-text_'+_vid+'_'+_box).parents('.comment-insert').find('.new_comm_buttons_wrapper #pos_comm .width').val();
+			var _height = $('#comment-post-text_'+_vid+'_'+_box).parents('.comment-insert').find('.new_comm_buttons_wrapper #pos_comm .height').val();
+		}
+		else {
+			var _posx = 0;
+			var _posy = 0;
+			var _width = "";
+			var _height = "";
+		}
+		var obj_posicion = {
+			posx: _posx,
+			posy: _posy,
+			w: _width,
+			h: _height
+		}
+		calcula_posicion_px_a_percentual_objeto(obj_posicion);	
+		_posx = obj_posicion.posx;
+		_posy = obj_posicion.posy;
+		_width = obj_posicion.w;
+		_height = obj_posicion.h;
 		console.log( 'update comentario: _post_id: ' + _post_id + ', comm_id: ' + comm_id );
 		
 		if(_comment.length > 0 && _userId != null) {
@@ -29,7 +55,11 @@
 					vidId : _vid,
 					boxId : _box,
 					timein : _timein,
-					timeout : _timeout
+					timeout : _timeout,
+					posx : _posx,
+					posy : _posy,
+					width : _width,
+					height : _height
 				}
 			)
 			.error(
@@ -184,7 +214,7 @@
 		// boton 'edit' habilitado
 		var aux_post_id = post_id.split("_");
 		$( 'li#' + aux_post_id[1] + '.edit-btn' ).removeClass('deshabilitado');	// --> display: inline-block;
-	
+
 		var is_overlaid = $('body').hasClass('is_overlaid');
 		var is_xy = $('body').hasClass('is_commsallover');
 		if (is_overlaid && is_xy) {
@@ -224,6 +254,14 @@
 		console.log('en actualiza_post_editado_pagina -> actualizado EDIT en página: ' + caja_destino_id + ' | pendiente Tiempos.' );
 		// restablecemos boton edit y añadimos evento
 		restablece_btn_edit( video_id, caja_id, post_id, edit_user );
+		var is_overlaid = $('body').hasClass('is_overlaid');
+		var is_xy = $('body').hasClass('is_commsallover');
+		if (is_overlaid && is_xy) {
+			posiciona_comentaris_a_pagina();	// los datos en DB son porcentuales. Es ok esta funcion.
+    		$('#area_comentarios #'+post_id+'.editing_comms_wrapper').removeClass('editing_comms_wrapper');
+    		$('#area_comentarios #'+post_id+' .comm_handle').removeClass('comm_handle_own');
+    		$('#area_comentarios #'+post_id+' .comment-body.editing_comms_wrapper').removeClass('editing_comms_wrapper');
+		}
 	}
   
 	function haz_post_editable(post_id, user) {
