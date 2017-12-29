@@ -262,7 +262,7 @@ class Comments {
 
 	
 	// update_con_vid_y_box
-	public static function update_con_vid_y_box( $comment_id, $comment_txt, $userId, $vidId, $boxId , $timein , $timeout) {
+	public static function update_con_vid_y_box( $comment_id, $comment_txt, $userId, $vidId, $boxId , $timein , $timeout, $pos_x = "", $pos_y = "", $width = "", $height = "") {
 		// Insert data into DB
 		$comment_txt = addslashes( $comment_txt );
 		
@@ -295,7 +295,7 @@ class Comments {
 			require(SCRIPT_DIR . "connect.php");					// con require_ONCE no funciona (porque db_connect lo 'machaca').
 		}
 		
-		$sql_pdo = "UPDATE comentarios_video_box SET comment=:comment_txt, userId=:userId, video_id=:vidId, box_id=:boxId, time_in=:timein, time_out=:timeout WHERE comment_id=:comment_id";
+		$sql_pdo = "UPDATE comentarios_video_box SET comment=:comment_txt, userId=:userId, video_id=:vidId, box_id=:boxId, time_in=:timein, time_out=:timeout, pos_x=:posx, pos_y=:posy, width=:width, height=:height WHERE comment_id=:comment_id";
 		// UPDATE `comentarios_video_box` SET `comment_id`=[value-1],`comment`=[value-2],`userId`=[value-3],`video_id`=[value-4],`box_id`=[value-5],`time_in`=[value-6],`time_out`=[value-7] WHERE 1
 		$stmt = $db->prepare($sql_pdo);
 		try{
@@ -308,18 +308,27 @@ class Comments {
 					':vidId' => $vidId,
 					':boxId' => $boxId,
 					':timein' => $timein,
-					':timeout' => $timeout
+					':timeout' => $timeout,
+					':posx' => $pos_x,
+					':posy' => $pos_y,
+					':width' => $width,
+					':height' => $height
 					));
 			//$result = $stmt->fetch();					// update, insert y delete a veces dan error Error: SQLSTATE[HY000] y es debido al fetch. No se usa fetch. Ponemos $result en el execute.
 			if ( count($result) ) { 
 				$std = new stdClass();
-				$std->comment_id = $comment_id;
-				$std->comment = $comment_txt;
-				$std->userId = (int)$userId;
-				$std->vidId = (int)$vidId;
-				$std->boxId = (int)$boxId;
-				$std->timein = (int)$timein;
-				$std->timeout = (int)$timeout;
+				$std->comment_id 	= $comment_id;
+				$std->comment 		= $comment_txt;
+				$std->userId 		= (int)$userId;
+				$std->vidId 		= (int)$vidId;
+				$std->boxId 		= (int)$boxId;
+				$std->timein 		= (int)$timein;
+				$std->timeout 		= (int)$timeout;
+				// added 17-12-2017 ("x,y,w,h")
+				$std->posx 			= (int)$pos_x;
+				$std->posy 			= (int)$pos_y;
+				$std->width 		= (int)$width;
+				$std->height 		= (int)$height;
 				$std->debug = 'comments update_con_vid_y_box if query ok';
 				$debug_commentsphp = 'estoy en comments update_con_vid_y_box if query';
 				return $std;
