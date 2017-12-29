@@ -22,6 +22,12 @@
 		$box = (int)$_POST['boxId'];
 		$timein = (float)$_POST['timein'];	
 		$timeout = (float)$_POST['timeout'];
+		// 25-12-2017 Caso xy: anyado posx, posy, width y height
+		$posx 	= (!isset($_POST['posx']) ) ? '' : $_POST['posx'];
+		$posy 	= (!isset($_POST['posy']) ) ? '' : $_POST['posy'];
+		$width 	= (!isset($_POST['width']) ) ? '' : $_POST['width'];
+		$height = (!isset($_POST['height']) ) ? '' : $_POST['height'];
+		
 		$std = new stdClass();
 		$std->error = false;
 		
@@ -41,7 +47,7 @@
 			}
 			
 			//$commentInfo = Comments::insert( $comment , $userId );	// retornará null si problemas
-			$commentInfo = Comments::update_con_vid_y_box( $comment_id , $comment , $userId , $vid , $box , $timein , $timeout);
+			$commentInfo = Comments::update_con_vid_y_box( $comment_id , $comment , $userId , $vid , $box , $timein , $timeout , $posx , $posy , $width , $height);
 			if( $commentInfo == null ) {
 				//dará problemas porque no ha podido insertar
 				$std->error = true;
